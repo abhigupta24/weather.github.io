@@ -1,0 +1,42 @@
+.words{
+  font-size: larger;
+  font-weight: 500;
+}
+.cardbg{
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.5), rgb(0,0,0,0))
+  }
+  .border{
+    border-radius: 12px;
+  }
+  .global{
+    position:relative;
+    /* transition:0.4s linear ; */
+  }
+  .word{
+    font-size: large;
+    font-weight: bold;
+  }
+  .global:hover{
+    animation: animated 0.5s forwards;
+    /* transition:0.4s linear ; */
+  }
+  h2.show{
+    animation: animate 0.2s forwards;
+    transition:0.4s linear ;
+  }
+  @keyframes animate{
+    from{
+      transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-40%);
+  }
+  }
+  @keyframes animated{
+    from{
+      transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-20%);
+  }
+  }
